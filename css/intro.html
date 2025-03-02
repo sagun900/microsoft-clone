@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Surface Deals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      .main {
+        width: 100%;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 40px;
+        background-color: #f4f4f4;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 24px;
+        margin-right: 10px;
+      }
+
+      .logo h2 {
+        font-size: 20px;
+      }
+
+      nav a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #0078d4;
+      }
+
+      .dis-section {
+        background-image: url('../images/showcase.jpg');
+        /* background-position: center; */
+        background-size: cover;
+        height: 500px;
+        padding: 30px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+
+      .dis-info {
+        text-align: center;
+        /* background: rgba(255, 255, 255, 0.8); */
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .dis-info h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        color: #0078d4;
+      }
+
+      .dis-info p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .dis-info button {
+        padding: 10px 20px;
+        background-color: black;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        display: inline-flex;
+        align-items: center;
+        transition: background-color 0.3s ease;
+      }
+
+      .dis-info button i {
+        margin-left: 10px;
+      }
+
+      .dis-info button:hover {
+        background-color: #005ea1;
+      }
+
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .product.card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        width: 300px;
+        text-align: center;
+        background: #fff;
+        transition: box-shadow 0.3s ease;
+      }
+
+      .product.card:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .product.card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border-radius: 4px;
+      }
+
+      .card-info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .card-info p {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      .card-info button {
+        padding: 10px 15px;
+        background-color: #0078d4;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .card-info button i {
+        margin-left: 5px;
+      }
+
+      .card-info button:hover {
+        background-color: #005ea1;
+      }
+
+      @media (max-width: 768px) {
+        .header {
+          flex-wrap: wrap;
+        }
+
+        nav {
+          text-align: center;
+          width: 100%;
+        }
+
+        .products {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <header class="header">
+        <div class="logo">
+          <img src="../images/logo.png" alt="Microsoft Logo" />
+          <nav>
+            <a href="#">Office</a>
+            <a href="#">Windows</a>
+            <a href="#">Surface</a>
+            <a href="#">Xbox</a>
+            <a href="#">Deals</a>
+            <a href="#">Support</a>
+          </nav>
+        </div>
+        <div>
+          <nav>
+            <i class="fas fa-search" aria-hidden="true" title="Search"></i>
+            <i class="fas fa-shopping-cart" aria-hidden="true" title="Shopping Cart"></i>
+          </nav>
+        </div>
+      </header>
+
+      <section class="dis-section">
+        <div class="dis-info">
+          <h2>Surface Deals</h2>
+          <p>Select Surfaces are on sale now - save while supplies last.</p>
+          <button>Shop Now <i class="fas fa-chevron-right"></i></button>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="product card">
+          <img src="../images/surface-pro7.jpg" alt="Surface Pro 7">
+          <div class="card-info">
+            <h3>New Surface Pro 7</h3>
+            <p>See how Katie Sowers, Asst. Coach for the 49ers, uses Surface Pro 7 to put her plans into play.</p>
+            <button>LEARN MORE <i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+        <div class="product card">
+          <img src="../images/surface-laptop3.jpg" alt="Surface Laptop 3">
+          <div class="card-info">
+            <h3>New Surface Laptop 3</h3>
+            <p>Express yourself powerfully with a thin, light, and elegant design, faster performance, and up to 11.5
+              hours battery life.</p>
+            <button>LEARN MORE <i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+
+</html>

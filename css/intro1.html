@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MicroSoft</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 20px 40px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+
+
+      a {
+        text-decoration: none;
+        color: rgb(36, 34, 34);
+        padding-right: 10px;
+      }
+
+      a:hover {
+        text-decoration: underline 1px solid;
+        text-underline-offset: 7px;
+      }
+
+      .icon {
+        padding-right: 20px;
+      }
+
+      @media(max-width: 640px) {
+        .icons {
+          display: none;
+        }
+
+        .left {
+          flex-direction: column;
+        }
+
+        header {
+          justify-content: center;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <div class="left">
+        <div class="logo">
+          <img height="25px" width="108px" src=" alt="">
+        </div>
+
+        <nav>
+          <a href="">Office</a>
+          <a href="">Windows</a>
+          <a href="">Surface</a>
+          <a href="">Xbox</a>
+          <a href="">Deals</a>
+          <a href="">Support</a>
+        </nav>
+      </div>
+
+
+      <div class=" icons">
+          <i class="fa-solid fa-magnifying-glass icon"></i>
+          <i class="fa-solid fa-cart-shopping "></i>
+        </div>
+    </header>
+
+  </body>
+
+</html>
